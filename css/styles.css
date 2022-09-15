@@ -5,7 +5,7 @@
   --secondary-bkg-color: #f5f4fa;
   --accent-color: #2196f3;
   --thirdary-bkg-color: #2f303a;
-  /* thirdary-bkg - на даний момент є 2 таких кольори, тому добавив в рут */
+  --icon-color: #afb1b8;
 }
 /* *,
 *::after,
@@ -41,6 +41,10 @@ p {
 ul {
   padding-left: 0px;
 }
+svg {
+  display: block;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -76,7 +80,9 @@ button {
   font-size: 36px;
   line-height: 1.17;
 }
-
+.icon {
+  fill: currentColor;
+}
 /* header */
 .header {
   border-bottom: 1px solid #ececec;
@@ -154,10 +160,16 @@ button {
   line-height: 1.15;
   letter-spacing: 0.02em;
   padding: 32px 0px;
+  display: flex;
+  align-items: center;
 }
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
+}
+
+.contact .icon {
+  margin-right: 10px;
 }
 
 /* INDEX.HTML */
@@ -166,9 +178,16 @@ button {
 
 .hero {
   background-color: var(--thirdary-bkg-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-bkg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero .container {
-   padding-top: 106px;
+  padding-top: 106px;
   padding-bottom: 106px;
   text-align: center;
 }
@@ -214,6 +233,14 @@ button {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.feat-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background: var(--secondary-bkg-color);
+  border-radius: 4px;
+  padding: 25px 0px;
 }
 
 .feat .title {
@@ -263,7 +290,29 @@ button {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.team-box .list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+}
 
+.team-box .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bkg-color);
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.team-box .link:hover,
+.team-box .link:focus {
+  color: var(--primary-bkg-color);
+  background-color: var(--accent-color);
+}
 /* footer */
 
 .footer {
