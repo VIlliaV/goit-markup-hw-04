@@ -7,11 +7,11 @@
   --thirdary-bkg-color: #2f303a;
   --icon-color: #afb1b8;
 }
-/* *,
+*,
 *::after,
 * ::before {
   outline: 1px solid red;
-} */
+}
 
 /* style for body */
 
@@ -257,11 +257,13 @@ button {
 
 .do .title,
 .team .title,
-.team-item .text {
+.team-item .text,
+.clients .title {
   text-align: center;
 }
 .do > .title,
-.team > .title {
+.team > .title,
+.clients .title {
   margin-bottom: 50px;
 }
 
@@ -313,6 +315,13 @@ button {
   color: var(--primary-bkg-color);
   background-color: var(--accent-color);
 }
+
+/* permanent clients */
+
+.clients .list {
+  display: flex;
+}
+
 /* footer */
 
 .footer {
@@ -346,6 +355,28 @@ button {
 }
 .address {
   font-style: normal;
+}
+
+/* permanent clients */
+
+.clients .list {
+  display: flex;
+  gap: 30px;
+}
+.clients .link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+.clients .link:hover,
+.clients .link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* PORTFOLIO */
