@@ -248,10 +248,9 @@ button {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  
 }
 .feat .title {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* we do */
@@ -310,20 +309,17 @@ margin-bottom: 10px;
   align-items: center;
   width: 44px;
   height: 44px;
-    border-radius: 50%;
-  
+  border-radius: 50%;
 }
 .team-box .link {
-background-color: var(--primary-bkg-color);
-color: var(--icon-color);
+  background-color: var(--primary-bkg-color);
+  color: var(--icon-color);
 }
-
 
 .team-box .link:hover,
 .team-box .link:focus,
 .join .link:hover,
-.join .link:focus
-{
+.join .link:focus {
   color: var(--primary-bkg-color);
   background-color: var(--accent-color);
 }
@@ -352,7 +348,6 @@ color: var(--icon-color);
   color: var(--accent-color);
 }
 
-
 /* footer */
 
 .footer {
@@ -365,7 +360,8 @@ color: var(--icon-color);
 }
 .foot-adr {
   width: 231px;
-  margin-right: 70px;}
+  margin-right: 70px;
+}
 .footer .studio {
   color: var(--primary-bkg-color);
 }
@@ -378,7 +374,6 @@ color: var(--icon-color);
 .address .link {
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  
 }
 .maps.link {
   color: var(--primary-bkg-color);
@@ -400,12 +395,11 @@ color: var(--icon-color);
   margin-bottom: 20px;
 }
 .join .link {
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-bkg-color);
-  
 }
 .join .list {
-gap: 10px;
+  gap: 10px;
 }
 
 /* PORTFOLIO */
