@@ -78,7 +78,7 @@ button {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.16;
 }
 .icon {
   fill: currentColor;
@@ -136,7 +136,7 @@ button {
 .nav-link .link {
   color: var(--secondary-text-color);
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -157,7 +157,7 @@ button {
 .contact .link {
   color: var(--primary-text-color);
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   padding: 32px 0px;
   display: flex;
@@ -243,11 +243,15 @@ button {
   padding: 25px 0px;
 }
 
-.feat .title {
+.feat .title,
+.join .title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  
+}
+.feat .title {
+margin-bottom: 10px;
 }
 
 /* we do */
@@ -282,11 +286,11 @@ button {
 .team-item .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
   margin-bottom: 10px;
 }
 .team-item .text {
-  line-height: 1.19;
+  line-height: 1.18;
 }
 .team-box {
   padding-top: 30px;
@@ -299,19 +303,27 @@ button {
   gap: 10px;
 }
 
-.team-box .link {
+.team-box .link,
+.join .link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--primary-bkg-color);
-  border-radius: 50%;
-  color: var(--icon-color);
+    border-radius: 50%;
+  
+}
+.team-box .link {
+background-color: var(--primary-bkg-color);
+color: var(--icon-color);
 }
 
+
 .team-box .link:hover,
-.team-box .link:focus {
+.team-box .link:focus,
+.join .link:hover,
+.join .link:focus
+{
   color: var(--primary-bkg-color);
   background-color: var(--accent-color);
 }
@@ -320,7 +332,26 @@ button {
 
 .clients .list {
   display: flex;
+  gap: 30px;
 }
+
+.clients .link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
 
 /* footer */
 
@@ -328,6 +359,13 @@ button {
   background-color: var(--thirdary-bkg-color);
   padding: 60px 0;
 }
+.footer .container,
+.join .list {
+  display: flex;
+}
+.foot-adr {
+  width: 231px;
+  margin-right: 70px;}
 .footer .studio {
   color: var(--primary-bkg-color);
 }
@@ -340,6 +378,7 @@ button {
 .address .link {
   display: block;
   color: rgba(255, 255, 255, 0.6);
+  
 }
 .maps.link {
   color: var(--primary-bkg-color);
@@ -356,27 +395,17 @@ button {
 .address {
   font-style: normal;
 }
-
-/* permanent clients */
-
-.clients .list {
-  display: flex;
-  gap: 30px;
+.join .title {
+  color: var(--primary-bkg-color);
+  margin-bottom: 20px;
 }
-.clients .link {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  color: var(--icon-color);
+.join .link {
+  background-color: rgba(255, 255, 255, 0.1);;
+  color: var(--primary-bkg-color);
+  
 }
-.clients .link:hover,
-.clients .link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+.join .list {
+gap: 10px;
 }
 
 /* PORTFOLIO */
@@ -394,7 +423,7 @@ button {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bkg-color);
   font-weight: 500;
-  line-height: 1.63;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   border-radius: 4px;
 }
@@ -418,7 +447,7 @@ button {
 }
 .portf-list .text {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
 }
 .portf-item {
   padding: 20px 24px;
