@@ -7,11 +7,11 @@
   --thirdary-bkg-color: #2f303a;
   --icon-color: #afb1b8;
 }
-*,
+/* *,
 *::after,
 * ::before {
   outline: 1px solid red;
-}
+} */
 
 /* style for body */
 
@@ -244,7 +244,7 @@ button {
 }
 
 .feat .title,
-.join .title {
+.join .invite {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -390,10 +390,13 @@ button {
 .address {
   font-style: normal;
 }
-.join .title {
+.join .invite {
+  display: block;
   color: var(--primary-bkg-color);
   margin-bottom: 20px;
+  font-weight: 700;
 }
+
 .join .link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-bkg-color);
