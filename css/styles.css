@@ -91,14 +91,14 @@ button {
   display: block;
 }
 
-.header > .container,
-.nav,
 .nav-link,
 .contact,
 .feat > .list,
 .do > .list,
 .team > .list,
-.btn-list,
+.clients .list,
+.footer .container,
+.join .list,
 .portf-list {
   display: flex;
 }
@@ -106,13 +106,29 @@ button {
   justify-content: space-between;
 }
 
+.feat-icon,
+.team-box .list,
+.team-box .link,
+.join .link,
+.clients .link,
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.header > .container,
+.nav,
+.contact .link {
+  display: flex;
+  align-items: center;
+}
+
 .feat > .list,
 .do > .list,
-.team > .list {
+.team > .list,
+.clients .list,
+.portf-list {
   gap: 30px;
-}
-.header > .container {
-  align-items: center;
 }
 
 .logo {
@@ -128,9 +144,6 @@ button {
 }
 .nav .studio {
   color: #000000;
-}
-.nav {
-  align-items: center;
 }
 
 .nav-link .link {
@@ -160,8 +173,6 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding: 32px 0px;
-  display: flex;
-  align-items: center;
 }
 .contact .link:hover,
 .contact .link:focus {
@@ -235,8 +246,6 @@ button {
   margin: -1px;
 }
 .feat-icon {
-  display: flex;
-  justify-content: center;
   margin-bottom: 30px;
   background: var(--secondary-bkg-color);
   border-radius: 4px;
@@ -296,16 +305,12 @@ button {
   padding-bottom: 30px;
 }
 .team-box .list {
-  display: flex;
-  justify-content: center;
   margin-top: 16px;
   gap: 10px;
 }
 
 .team-box .link,
 .join .link {
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
@@ -326,16 +331,9 @@ button {
 
 /* permanent clients */
 
-.clients .list {
-  display: flex;
-  gap: 30px;
-}
-
 .clients .link {
-  display: flex;
   width: 170px;
   height: 92px;
-  justify-content: center;
   align-items: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -354,10 +352,7 @@ button {
   background-color: var(--thirdary-bkg-color);
   padding: 60px 0;
 }
-.footer .container,
-.join .list {
-  display: flex;
-}
+
 .foot-adr {
   width: 231px;
   margin-right: 70px;
@@ -408,7 +403,6 @@ button {
 /* PORTFOLIO */
 .btn-list {
   margin-bottom: 50px;
-  justify-content: center;
   gap: 8px;
 }
 
@@ -433,7 +427,6 @@ button {
 }
 .portf-list {
   flex-wrap: wrap;
-  gap: 30px;
 }
 .portf-list > li {
   flex-basis: calc((100% - 60px) / 3);
