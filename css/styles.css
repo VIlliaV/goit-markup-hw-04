@@ -348,7 +348,9 @@ button {
 }
 
 /* footer */
-
+.footer > .container {
+  align-items: baseline;
+}
 .footer {
   background-color: var(--thirdary-bkg-color);
   padding: 60px 0;
